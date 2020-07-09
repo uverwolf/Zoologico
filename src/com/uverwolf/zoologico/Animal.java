@@ -5,18 +5,20 @@ private int nivelEnergia =100;
 
 public int displayEnergy() {
 	
-	return this.nivelEnergia;
+	return nivelEnergia;
 }
-
+public void setEnergia(int valor) {
+	nivelEnergia +=valor;
+}
 
 public int desgaste(int desgaste) {
 	
 	return nivelEnergia -=desgaste;
 }
 
-public int alimentarse() {
+public int alimentarse(int comida) {
 	
-	return nivelEnergia+=10;
+	return nivelEnergia+=comida;
 }
 
 }
